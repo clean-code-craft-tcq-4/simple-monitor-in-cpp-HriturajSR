@@ -16,7 +16,7 @@ namespace battery
     return (actualValue < minValue || actualValue > maxValue);
 }
 
- bool battery::BatteryChecker::batteryIsOk(float temperature, float soc, float chargeRate)
+ bool battery::BatteryChecker::batteryHealthIsOk(float temperature, float soc, float chargeRate)
 {
    return (batteryTemperatureIsOk(temperature) && batterySocIsOk(soc) && batteryChargeRateIsOk(chargeRate));
 }
